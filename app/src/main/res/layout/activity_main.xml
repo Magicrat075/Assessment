@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ToggleButton
+        android:id="@+id/toggleMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:layout_gravity="end"
+        android:layout_marginBottom="24dp"
+        android:textOn="@string/switchToBatch"
+        android:textOff="@string/switchToSingle" />
+
+    <TextView
+        android:id="@+id/display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="#E0E0E0"
+        android:gravity="end"
+        android:padding="8dp"
+        android:textColor="@android:color/black"
+        android:textSize="24sp" />
+
+    <!-- Single-Step Mode -->
+    <LinearLayout
+        android:id="@+id/singleStepLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="4"
+            android:padding="8dp">
+
+            <Button
+                android:id="@+id/btn7"
+                android:layout_margin="8dp"
+                android:text="7" />
+
+            <Button
+                android:id="@+id/btn8"
+                android:layout_margin="8dp"
+                android:text="8" />
+
+            <Button
+                android:id="@+id/btn9"
+                android:layout_margin="8dp"
+                android:text="9" />
+
+            <Button
+                android:id="@+id/btnDiv"
+                android:layout_margin="8dp"
+                android:text="/" />
+
+            <Button
+                android:id="@+id/btn4"
+                android:layout_margin="8dp"
+                android:text="4" />
+
+            <Button
+                android:id="@+id/btn5"
+                android:layout_margin="8dp"
+                android:text="5" />
+
+            <Button
+                android:id="@+id/btn6"
+                android:layout_margin="8dp"
+                android:text="6" />
+
+            <Button
+                android:id="@+id/btnMul"
+                android:layout_margin="8dp"
+                android:text="*" />
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_margin="8dp"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_margin="8dp"
+                android:text="2" />
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_margin="8dp"
+                android:text="3" />
+
+            <Button
+                android:id="@+id/btnSub"
+                android:layout_margin="8dp"
+                android:text="-" />
+
+            <Button
+                android:id="@+id/btnDot"
+                android:layout_margin="8dp"
+                android:text="." />
+
+            <Button
+                android:id="@+id/btn0"
+                android:layout_margin="8dp"
+                android:text="0" />
+
+            <Button
+                android:id="@+id/btnNext"
+                android:layout_margin="8dp"
+                android:text="@string/next" />
+
+            <Button
+                android:id="@+id/btnAdd"
+                android:layout_margin="8dp"
+                android:text="+" />
+
+            <Button
+                android:id="@+id/btnClear"
+                android:layout_margin="8dp"
+                android:text="@string/clear" />
+
+        </GridLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="32dp"
+            android:text="@string/simpleModeDesc"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+    <!-- Batch Mode -->
+    <LinearLayout
+        android:id="@+id/batchModeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/inputBatch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#E0E0E0"
+            android:hint="@string/enterExpression"
+            android:padding="16dp"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/btnClearBatch"
+            android:layout_margin="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/clear" />
+
+        <Button
+            android:id="@+id/btnCalculateBatch"
+            android:layout_margin="8dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/calculate" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="32dp"
+            android:text="@string/batchModeDesc"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+</LinearLayout>
+

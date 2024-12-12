@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="notEnoughValues">Not enough values to perform operation</string>
+    <string name="cannotDivideBy0">Cannot divide by zero</string>
+    <string name="invalidOperator">Invalid operator</string>
+    <string name="expressionCannotBeEmpty">Expression cannot be empty</string>
+    <string name="notEnoughNumber">Error: Not enough numbers for operator %s</string>
+    <string name="tooManyNumbers">Error: Too many numbers left on the stack.</string>
+    <string name="error">Error: %s</string>
+    <string name="next">Next</string>
+    <string name="clear">Clear</string>
+
+    <string name="enterExpression">Enter RPN expression (e.g., 15 7 1 1 * - /)</string>
+    <string name="calculate">Calculate</string>
+    <string name="switchToBatch">Switch to Batch Mode</string>
+    <string name="switchToSingle">Switch to Single Mode</string>
+
+    <string name="simpleModeDesc">In this mode you can make single calculations. For example you can calculate simple single calculations such as 1 1 +. In order to use single mode enter a value with ot without a decimal point, hit NEXT, enter the second number, then hit your operator. When finished hit clear and enter a new calculation.</string>
+    <string name="batchModeDesc">In this mode you can enter complex calculations as a single string. For example you can enter 15 7 1 1 * - / then hit calculate to get the result. Please ensure spaces between the values and operators. Once finished hit clear and enter a new calculation.</string>
+</resources>
